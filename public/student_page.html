@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+
+<html lang="ru">
+	<head>
+		<meta charset="UTF-8">
+  		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>my_project</title>
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/font-awesome.min.css">
+		<link rel="stylesheet" href="css/my_style.css">
+	</head>
+
+	<body>
+		<div id="profile_menu">
+			<a href="#" class="closebtn">&times</a>
+			<h3 class="text-center">Основы HTML, CSS</h3>
+			<hr>
+			<div id="task_list">
+				<ul>
+					<li><a href="#"><i class="fa fa-video-camera" aria-hidden="true"></i> Введение в HTML</a></li>
+					<li><a href="#"><i class="fa fa-video-camera" aria-hidden="true"></i> Общие HTML элементы</a></li>
+					<li><a href="#"><i class="fa fa-video-camera" aria-hidden="true"></i> Форматирование текста</a></li>
+					<li><a href="#"><i class="fa fa-video-camera" aria-hidden="true"></i> Изоьбражения, аудио, видео</a></li>
+					<li><a href="#"><i class="fa fa-video-camera" aria-hidden="true"></i> Ссылки</a></li>
+				</ul>
+				<hr>
+				<ul>						
+					<li><a href="#"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Практическое задание.</a></li>
+				</ul>
+			</div>		
+		</div>
+		<header>
+			<div class="logo_div">
+				<div class="container">
+					<a href="index.html" class="navbar-brand">Company Logo</a>
+					<div class="user_avatar">
+						<ul>
+							<li>
+								<h5>Андрей</h5>
+							</li>
+							<li>
+								<img src="img/jumbotron_bg.jpg" alt="avatar" class="img-circle" width="50" height="50">	
+							</li>
+							<li>
+								<a href="#" id="show_user_profile_menu"><i class="fa fa-caret-down" aria-hidden="true"></i></a>
+							</li>
+						</ul>
+						<div id="user_profile_menu">
+							<ul class="list-group">
+								<li><a href="#" class="list-group-item">Мой профиль</a></li>
+								<li><a href="#" class="list-group-item">Редактировать</a></li>
+								<hr>
+								<li><a href="#" class="list-group-item">Выход</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<nav class="nav navbar-default" id="top_menu">
+				<div class="container">
+					<div class="navbar-header" >
+						<a href="#" class="navbar-brand" id="open_close_menu"><i class="fa fa-bars" aria-hidden="true"></i></a>
+					</div>
+
+				</div><!-- container -->
+			</nav> <!-- nav navbar-default-->
+		</header>
+		<div id="student_page">
+			<div class="container-fluid">	
+				<div class="col-sm-3 profile_menu_wrapper">
+					<div class="profile_menu">
+						<h3 class="text-center">Основы HTML, CSS</h3>
+						<hr>
+
+						<div id="task_list">
+							<ul>
+								<li><a href="#"><i class="fa fa-video-camera" aria-hidden="true"></i> Введение в HTML</a></li>
+								<li><a href="#"><i class="fa fa-video-camera" aria-hidden="true"></i> Общие HTML элементы</a></li>
+								<li><a href="#"><i class="fa fa-video-camera" aria-hidden="true"></i> Форматирование текста</a></li>
+								<li><a href="#"><i class="fa fa-video-camera" aria-hidden="true"></i> Изоьбражения, аудио, видео</a></li>
+								<li><a href="#"><i class="fa fa-video-camera" aria-hidden="true"></i> Ссылки</a></li>
+							</ul>
+							<hr>
+							<ul>
+								<li><a href="#"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Практическое задание.</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="col-xs-12 col-sm-9">
+						<h2 class="text-center">Введенте в HTML</h2>	
+						<div id="next_prev">
+							<ul>
+								<li><a href="#" class="btn btn-default"><i class="fa fa-arrow-left" aria-hidden="true"></i> пред.</a></li>
+								<li><a href="#" class="btn btn-default">след. <i class="fa fa-arrow-right" aria-hidden="true"></i></a></li>
+							</ul>
+						</div>
+						<hr>
+						<div id="video_player"> 
+							<video src="video/_avi.mp4" controls>
+								  Your browser does not support HTML5 video.
+							</video>
+						</div>
+						<div class="lesson_descr">
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At, beatae odio numquam et officiis ratione magni sequi quasi placeat voluptatibus, nam modi ipsum, ut recusandae! Praesentium corporis hic a non!
+							</p>
+						</div>
+						<div class="course_page">	
+							<div id="code_example">
+								<ul class="nav nav-tabs ">
+								  <li class="active"><a href="#html" data-toggle="tab">HTML</a></li>
+								  <li><a href="#css" data-toggle="tab">CSS</a></li>
+								  <li><a href="#javascript" data-toggle="tab">JavaScript</a></li>
+								</ul>
+
+										<!-- Tab panes -->
+								<div class="tab-content">
+								  <div class="tab-pane fade in active" id="html">
+								  	<iframe src="js/common.js" frameborder="1"></iframe>
+								  </div>
+								  <div class="tab-pane fade in " id="css">
+								  	<iframe src="css/my_style.css" frameborder="1"></iframe>
+								  </div>
+								  <div class="tab-pane fade in " id="javascript">
+								  	<iframe src="js/common.js" frameborder="1"></iframe>								  	
+								  </div>
+								</div>	
+							</div><!-- code_example -->		 					 
+						</div><!-- .course_page --> 
+					<div class="row student_page_footer">
+							<div class="col-xs-12 col-sm-4 col-md-4 footer_logo"> 
+								<h3><a href="#">CompanyLogo</a></h3>
+								<p>здеь будет описание</p>
+							</div>			
+							<ul class="list-unstyled col-xs-6 col-sm-4">
+								<li><h3>web development</h3></li>
+								<li><a href="#">О проекте</a></li>
+							</ul>
+							<ul class="list-unstyled col-xs-6 col-sm-4">
+								<li><h3>контакты</h3></li>
+								<li><a href="#"><i class="fa fa-vk" aria-hidden="true"></i> В Контакте</a></li>
+								<li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i> Facebook</a></li>
+								<li><a href="#"><i class="fa fa-github" aria-hidden="true"></i> Githud</a></li>
+							</ul>					
+					</div> <!--row-->				
+				</div><!--.col-sm-9 -->
+			</div>
+		</div>
+		<script src = "js/jquery-2.1.3.min.js"></script>
+		<script src = "js/bootstrap.min.js"></script>	
+		<script src = "js/common.js"></script>		
+	</body>
+</html>

@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+
+<html lang="ru">
+	<head>
+		<meta charset="UTF-8">
+  		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>my_project</title>
+		<link rel="stylesheet" href="../bower_components/angular/angular.min.js">
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/font-awesome.min.css">
+		<link rel="stylesheet" href="css/my_style.css">
+	</head>
+
+	<body >
+		<header>
+			<div class="logo_div">
+				<div class="container">
+					<a href="index.html" class="navbar-brand">Company Logo</a>
+				</div>				
+			</div>
+			<nav class="nav navbar-default" id="top_menu">
+				<div class="container">
+					<div class="navbar-header" >
+						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+				        	<span class="icon-bar"></span>
+				        	<span class="icon-bar"></span>
+				        	<span class="icon-bar"></span> 
+				     	 </button>
+						<a href="index.html" class="navbar-brand"><span class="glyphicon glyphicon-home"></span></a>
+					</div>
+					<div class="collapse navbar-collapse" id="myNavbar">
+						<div class="nav navbar-nav" id="top_menu_search">
+							<div class="form-group form-inline">
+								<a class="btn" href="#"><span class="glyphicon glyphicon-search"></span></a>
+								<input class="form-control btn"type="text" placeholder="поиск...">
+							</div>
+						</div>
+						<ul class="nav navbar-nav navbar-right">
+							<li><a href="#" id="authorisation" data-toggle="tooltip" title="Авторизация"><span class="glyphicon glyphicon-log-in"></span></a></li>
+							<li><a id="registration" href="#" data-toggle="tooltip" title="Регистрация"><span class="glyphicon glyphicon-user"></span></a></li>
+						</ul>
+					</div> <!-- collapse navbar-collapse -->
+					<div id="authModal" class="modal fade" role="dialog">
+						<div class="modal-dialog">
+						    <div class="modal-content">
+						        <div class="modal-header">
+						            <button type="button" class="close" data-dismiss="modal">&times;</button>
+						            <h3 class="modal-title text-center">Авторизация</h3>
+						        </div>
+						    	<div class="modal-body">
+						    		<h3 class="text-center">войти с помощью</h3>
+						    		выпып
+						    		<hr>		
+									<form action="#" class="form-horizontal" method="post">
+										<div class="form-group">
+									    	<div class="col-xs-8 col-xs-offset-2 ">
+									    		<input type="email" class="form-control" name="email" placeholder="email" required>
+									    	</div>
+									    </div>
+										<div class="form-group">
+									    	<div class="col-xs-8 col-xs-offset-2 ">
+									    		<input type="password" class="form-control" name="password" placeholder="password">
+									    	</div>
+									    </div>
+										<div class="form-group">
+									    	<div class=" col-xs-offset-2 ">
+									    		<input type="checkbox" name="checkbox">Запомнить меня
+									    	</div>
+									    </div>
+										<div class="form-group">
+									    	<div class="col-xs-8 col-xs-offset-2 ">
+									    		<input type="submit" class=" btn btn-success form-control" value="Авторизоваться">
+									    	</div>
+									    </div>
+										<div class="form-group">
+									    	<div class="col-xs-offset-2">
+									    		<a href="#">Забыли пароль?</a>
+									    	</div>
+									    </div>
+									</form>
+						    	</div><!-- modal body-->
+						    </div><!-- modal content-->
+						</div><!-- modal dialog-->
+					</div><!-- #authModal -->
+					<div id="regModal" class="modal fade" role="dialog">
+						<div class="modal-dialog">
+						    <div class="modal-content">
+						        <div class="modal-header">
+						            <button type="button" class="close" data-dismiss="modal">&times;</button>
+						            <h3 class="modal-title text-center">Регистрация</h3>
+						        </div>
+						    	<div class="modal-body">
+									<form action="#" class="form-horizontal" method="post">
+										<div class="form-group">
+									    	<div class="col-xs-8 col-xs-offset-2 ">
+									    		<input type="text" class="form-control" name="name" placeholder="Имя" required>
+									    	</div>
+									    </div>
+										<div class="form-group">
+									    	<div class="col-xs-8 col-xs-offset-2 ">
+									    		<input type="email" class="form-control" name="email" placeholder="Email" required>
+									    	</div>
+									    </div>
+										<div class="form-group">
+									    	<div class="col-xs-8 col-xs-offset-2 ">
+									    		<input type="submit" class=" btn btn-success form-control" value="Зарегистрироваться">
+									    	</div>
+									    </div>
+									</form>
+						    	</div><!-- modal body -->
+						    </div><!-- modal content-->
+						</div> <!-- modal dialog-->
+					</div><!-- #regModal -->
+				</div><!-- container -->
+			</nav> <!-- nav navbar-default-->
+			<div class="jumbotron">
+				<div class="container">
+					<div class="row">
+						<div class="col-xs-12">
+							<h1>Осваиваем Web разработку.</h1>
+							<p>Все современные технологии, которые необходимы для создания веб приложений.</p>			
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+		<section>
+		    <div class="container">
+				<div class="col-xs-12">
+					<div id="carousel" class="carousel slide" data-ride="carousel">
+						<ol class="carousel-indicators">
+							<li data-target="#carousel" data-slide-to="0" class="active"></li>
+							<li data-target="#carousel" data-slide-to="1"></li>
+							<li data-target="#carousel" data-slide-to="2"></li>
+							<li data-target="#carousel" data-slide-to="3"></li>
+						</ol>
+
+						<div class="carousel-inner" role="listbox">
+							<div class="item active">
+								<div class="col-xs-12 col-sm-6 text-center">
+									<h2>HTML</h2>
+									<p>Язык разметки веб-страницы.</p>
+									<a href="#" class="carousel_button col-xs-6 col-xs-offset-3 btn btn-success ">Начать обучение.</a>
+								</div>
+								<div class="col-xs-8 col-xs-offset-2 col-sm-offset-0 col-sm-5 ">
+									<div class="sintax_example">
+										<h3>Пример HTML:</h3>
+										<div class="code">
+											
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="item">
+								<div class="col-xs-8 col-xs-offset-2 col-sm-offset-1 col-sm-5">
+									<div class="sintax_example">
+										<h3>Пример CSS:</h3>
+										<div class="code">
+											
+										</div>
+									</div>
+
+								</div>
+								<div class="col-xs-8 col-xs-offset-2 col-sm-offset-0 col-sm-5 text-center">
+									<h2>CSS</h2>
+									<p>Язык стилизации веб-страницы.</p>
+									<a href="#" class="carousel_button col-xs-6 col-xs-offset-3 btn btn-success ">Начать обучение.</a>
+								</div>
+							</div>
+							<div class="item">
+								<div class="col-xs-12 col-sm-6 text-center">
+									<h2>JavaScript</h2>
+									<p>Язык для програмирования веб-страниц.</p>
+									<a href="#" class="carousel_button col-xs-6 col-xs-offset-3 btn btn-success ">Начать обучение.</a>
+								</div>
+								<div class="col-xs-8 col-xs-offset-2 col-sm-offset-0 col-sm-5 ">
+									<div class="sintax_example">
+										<h3>Пример JavaSctript:</h3>
+										<div class="code">
+											
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="item">
+								<div class="col-xs-8 col-xs-offset-2 col-sm-offset-1 col-sm-5">
+									<div class="sintax_example">
+										<h3>Пример Node:</h3>
+										<div class="code">	
+										</div>
+									</div>
+								</div>
+								<div class="col-xs-8 col-xs-offset-2 col-sm-offset-0 col-sm-5 text-center">
+									<h2>Node.js</h2>
+									<p>Серверная часть.</p>
+									<a href="#" class="carousel_button col-xs-6 col-xs-offset-3 btn btn-success ">Начать обучение.</a>
+								</div>
+							</div>
+						</div><!-- carousel-inner -->
+					</div><!-- #carousel -->
+				</div> <!-- col-xs-12 -->
+		    </div><!-- container -->
+		</section>
+		<section id="how_its_work">
+			<div class="container">
+				<div class="row">
+					<h2>Как это работает</h2>
+ 
+				</div> <!--row-->
+			</div> <!--container-->
+		</section>
+		<footer>
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-12 col-sm-6 col-md-4">
+						<div class="footer_logo"> 
+							<h3><a href="#">CompanyLogo</a></h3>
+							<p>здеь будет описание</p>
+						</div>			
+					</div>
+					<div class="col-xs-12 col-sm-6 col-md-6">	
+						<ul class="list-unstyled">
+							<li><h3>web development</h3></li>
+							<li><a href="#">О проекте</a></li>
+						</ul>
+						<ul class="list-unstyled" id="menu_bottom_contacts">
+							<li><h3>контакты</h3></li>
+							<li><a href="#"><i class="fa fa-vk" aria-hidden="true"></i> В Контакте</a></li>
+							<li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i> Facebook</a></li>
+							<li><a href="#"><i class="fa fa-github" aria-hidden="true"></i> Githud</a></li>
+						</ul>					
+					</div>
+				</div> <!--row-->
+			</div> <!--container-->
+		</footer>
+		<script src = "js/jquery-2.1.3.min.js"></script>
+		<script src = "js/bootstrap.min.js"></script>	
+		<script src = "js/common.js"></script>
+	</body>
+</html>
